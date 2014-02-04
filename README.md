@@ -1,2 +1,2 @@
-fq.github.com
+fq.github.io
 =============
