@@ -1,6 +1,24 @@
 <html>
 <title>FQ's</title>
 <body>
-<h1>Git rocks!</h1>
+<canvas id='myCanvas' width='300' height='300' ></canvas>
+<script>
+    var _ctx;
+    var canvas = document.getElementById("myCanvas");
+    if (canvas && canvas.getContext)
+        _ctx = canvas.getContext("2d");
+    
+    if (_ctx) {
+        _ctx.beginPath();
+        _ctx.arc(75,75,50,0,Math.PI*2,true);
+        _ctx.moveTo(110,75);
+        _ctx.arc(75,75,35,0,Math.PI,false);
+        _ctx.moveTo(65,65);
+        _ctx.arc(60,65,5,0,Math.PI*2,true);
+        _ctx.moveTo(95,65);
+        _ctx.arc(90,65,5,0,Math.PI*2,true);
+        _ctx.stroke();
+    }
+</script>
 </body>
 </html>
